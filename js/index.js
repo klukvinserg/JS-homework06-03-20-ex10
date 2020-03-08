@@ -2,9 +2,11 @@ alert("Remember a number from 1 to 100");
 
 let arr = [];
 let num;
+
 for (let i = 1; i <= 100; i++) {
   arr.push(i);
 }
+
 for (; true; ) {
   if (arr.length % 2 === 0 && arr.length > 3) {
     for (; true; ) {
@@ -27,7 +29,7 @@ for (; true; ) {
           arr[arr.length / 2 - 1.5]
         }\n3) =${arr[arr.length / 2 - 0.5]}`
       );
-      if (num === 1 || (num === 2) | (num === 3)) {
+      if (num === 1 || num === 2 || num === 3) {
         break;
       } else {
         alert("Input incorrect");
@@ -39,8 +41,7 @@ for (; true; ) {
       num = +prompt(
         `Is your number:\n1) >=${arr[0]}\n2) <=${arr[2]}\n3) =${arr[1]}`
       );
-
-      if (num === 1 || (num === 2) | (num === 3)) {
+      if (num === 1 || num === 2 || num === 3) {
         break;
       } else {
         alert("Input incorrect");
@@ -64,7 +65,7 @@ for (; true; ) {
     for (; true; ) {
       num = +prompt(`Is your number:\n1) >=${arr[0]}\n2) <=${arr[1]}`);
 
-      if (num === 1 || (num === 2) | (num === 3)) {
+      if (num === 1 || num === 2 || num === 3) {
         break;
       } else {
         alert("Input incorrect");
